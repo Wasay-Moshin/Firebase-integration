@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-function Form({title, setEmail, setPassword, handleAction}) {
+function Form({ title, setEmail, setPassword, handleAction }) {
   return (
     <div className="form">
       <div className="container">
@@ -9,12 +9,12 @@ function Form({title, setEmail, setPassword, handleAction}) {
           <div className="col-md-4">
             <div className="card px-5 py-3 ">
               <div className="signup">
-                <form>
+                <div>
                   <div className="text-center mb-5">
                     <h1>{title} Now</h1>
                   </div>
                   <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">
+                    <label for="exampleInputEmail" className="form-label">
                       Email
                     </label>
                     <input
@@ -22,31 +22,35 @@ function Form({title, setEmail, setPassword, handleAction}) {
                       name="email"
                       type="email"
                       className="form-control"
-                      id="exampleInputEmail1"
+                      id="exampleInputEmail"
                       aria-describedby="emailHelp"
                     />
                     <div id="emailHelp" className="form-text"></div>
                   </div>
                   <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">
+                    <label for="exampleInputPassword" className="form-label">
                       {" "}
                       Password
                     </label>
                     <input
-                    onChange={(e) => setPassword(e.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       type="password"
                       name="password"
                       className="form-control"
-                      id="exampleInputPassword1"
+                      id="exampleInputPassword"
                     />
                   </div>
-                  
+
                   <div className="text-center mt-4 mb-3">
-                    <button type="submit" className="btn btn-primary" onClick={handleAction}>
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      onClick={handleAction}
+                    >
                       {title}
                     </button>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>

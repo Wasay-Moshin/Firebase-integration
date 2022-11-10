@@ -21,10 +21,26 @@ function Home() {
   };
 
   return (
-    <>
-      <h2>Home</h2>
-      <Button onClick={logout}>Log out</Button>
-    </>
+    <div className="homepg">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h1>Home Page</h1>
+        </div>
+        <div className="row">
+          <div className="col-md-6 mt-5">
+            <h2 className="mt-5">We Can Work On It Together</h2>
+            <div className="mt-4">
+              <Button variant="outlined" onClick={logout}>
+                Log out
+              </Button>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <img className="img-fluid bg1" src=" Assets/project.webp " alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Home;

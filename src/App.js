@@ -5,6 +5,7 @@ import { useState, useEffect} from "react";
 import "./App.scss";
 import Form from "./Component/Elements/Form";
 import Home from "./Component/Elements/Home";
+// eslint-disable-next-line
 import { app } from "./firbase";
 import {
   getAuth,
@@ -25,7 +26,7 @@ function App() {
     if (authToken) {
       navigate("/home");
     }
-  }, []);
+  }, [navigate]);
   const handleAction = (id) => {
     const authentication = getAuth();
     if (id === 2) {
@@ -70,7 +71,7 @@ function App() {
             }
           />
              <Route
-            path="/signup"
+            path="/"
             element={
               <Form
                 setEmail={setEmail}

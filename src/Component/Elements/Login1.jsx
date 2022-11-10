@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Login1() {
+function Login1({setEmail,setPassword ,handleAction}) {
   return (
     <div className="loginform">
       <div className="container">
@@ -22,6 +22,7 @@ function Login1() {
                       type="email"
                       className="form-control"
                       id="exampleInputEmail1"
+                      onChange={(e) => setEmail(e.target.value)}
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -30,13 +31,14 @@ function Login1() {
                       Password
                     </label>
                     <input
+                     onChange={(e) => setPassword(e.target.value)}
                       type="password"
                       className="form-control"
                       id="exampleInputPassword1"
                     />
                   </div>
                   <div className="text-center mt-4">
-                  <button type="submit" className="btn btn-primary ">
+                  <button type="submit" className="btn btn-primary " onClick={handleAction}>
                     Login
                   </button>
                   </div>

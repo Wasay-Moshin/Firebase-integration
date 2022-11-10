@@ -11,11 +11,10 @@ body{
   
 }
 .form {
-  padding-top: 60px;
   .card {
-    margin-top: 70px;
-    margin-right: -80px;
-    background: hsla(0, 1%, 27%, 0.187);
+    margin-top: 80px;
+    margin-right: -90px;
+    background: hsla(0, 0%, 100%, 0.55);
     backdrop-filter: blur(30px);
   }
   h1{
@@ -25,8 +24,8 @@ body{
   }
 
   .img1 {
-    margin-top: 90px;
-    height:330px;
+    margin-top: 100px;
+    height: 390px;
     width: 550px;
     border-radius: 10px;
   }
@@ -46,7 +45,7 @@ body{
     }
     .img1{
         margin-top: 100px;
-        height: 420px;
+        height: 390px;
         width: 550px;
         border-radius: 10px;
     }

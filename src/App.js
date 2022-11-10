@@ -15,6 +15,7 @@ import {
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Login1 from "./Component/Elements/Login1";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -62,7 +63,7 @@ function App() {
           <Route
             path="/login"
             element={
-              <Form
+              <Login1
                 setEmail={setEmail}
                 setPassword={setPassword}
                 handleAction={() => handleAction(1)}

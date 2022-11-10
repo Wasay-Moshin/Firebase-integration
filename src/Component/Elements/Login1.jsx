@@ -1,6 +1,6 @@
 import React from "react";
-
-function Login() {
+import { Link } from "react-router-dom";
+function Login1() {
   return (
     <div className="loginform">
       <div className="container">
@@ -9,7 +9,7 @@ function Login() {
           <div className="col-md-4">
             <div className="card px-5 py-3 ">
               <div className="login">
-                <form>
+                <div>
                   <div className="text-center">
                     <h1>Login</h1>
                   </div>
@@ -35,31 +35,23 @@ function Login() {
                       id="exampleInputPassword1"
                     />
                   </div>
-                  <div className="mb-3 form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label className="form-check-label" for="exampleCheck1">
-                      Check me out
-                    </label>
-                  </div>
-                  <button type="submit" className="btn btn-primary">
+                  <div className="text-center mt-4">
+                  <button type="submit" className="btn btn-primary ">
                     Login
                   </button>
-                  <div className="text-center">
-                    <br />
+                  </div>
+                  <div className="text-center mt-5">
+                  
                     <hr />
                     <label>If you don't have account</label>
                     <br />
-                    <a href="/">
+                    <Link to="/">
                       <button type="button" className="btn btn-link">
                         Sign Up
                       </button>
-                    </a>
+                    </Link>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -74,4 +66,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login1;

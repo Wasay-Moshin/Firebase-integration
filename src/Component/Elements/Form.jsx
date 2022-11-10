@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Form({ title, setEmail, setPassword, handleAction }) {
   return (
     <div className="form">
@@ -10,7 +10,7 @@ function Form({ title, setEmail, setPassword, handleAction }) {
             <div className="card px-5 py-3 ">
               <div className="signup">
                 <div>
-                  <div className="text-center mb-5">
+                  <div className="text-center mb-3">
                     <h1>{title} Now</h1>
                   </div>
                   <div className="mb-3">
@@ -49,6 +49,11 @@ function Form({ title, setEmail, setPassword, handleAction }) {
                     >
                       {title}
                     </button>
+                  </div>
+                  <hr className="mt-5"/>
+                  <div className="text-center">
+                    If you already have then <br/> 
+                    <Link to="/login">Click here</Link>
                   </div>
                 </div>
               </div>

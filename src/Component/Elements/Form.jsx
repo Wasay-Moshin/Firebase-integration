@@ -40,7 +40,6 @@ function Form({ title, setEmail, setPassword, handleAction }) {
                       id="exampleInputPassword"
                     />
                   </div>
-
                   <div className="text-center mt-4 mb-3">
                     <button
                       type="submit"

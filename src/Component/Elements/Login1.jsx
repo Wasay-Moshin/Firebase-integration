@@ -37,12 +37,17 @@ function Login1({setEmail,setPassword ,handleAction}) {
                       id="exampleInputPassword1"
                     />
                   </div>
-                  <div className="text-center mt-4">
+                  <Link to="/resetpass">
+                  <div className="text-end">
+                  <button type="button" class="btn btn-link">Forget Password</button>
+                  </div>
+                  </Link>
+                  <div className="text-center">
                   <button type="submit" className="btn btn-primary " onClick={handleAction}>
                     Login
                   </button>
                   </div>
-                  <div className="text-center mt-5">
+                  <div className="text-center ">
                   
                     <hr />
                     <label>If you don't have account</label>

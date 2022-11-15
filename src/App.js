@@ -6,7 +6,7 @@ import "./App.scss";
 import Form from "./Component/Elements/Form";
 import Home from "./Component/Elements/Home";
 import db from "./firbase";
-import { collection, addDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import {
   getAuth,
   signInWithEmailAndPassword,
@@ -36,7 +36,7 @@ function App() {
           navigate("/home");
           toast.info("Sign Up successfully");
           sessionStorage.setItem("auth", res._tokenResponse.refreshToken);
-          addDoc(collection(db, "users"), {
+          setDoc(doc(db, "users", res.user.uid), {
             email: email,
             password: password,
           });

@@ -1,4 +1,6 @@
 import { Button } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+import IconButton from "@mui/material/IconButton";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -30,9 +32,15 @@ function Home() {
           <div className="col-md-6 mt-5">
             <h2 className="mt-5">We Can Work On It Together</h2>
             <div className="mt-4">
+            <Button variant="contained">Show profile</Button> 
+            &nbsp;
               <Button variant="outlined" onClick={logout}>
                 Log out
               </Button>
+              <IconButton aria-label="delete">
+                <DeleteIcon />
+              </IconButton>
+           
             </div>
           </div>
           <div className="col-md-6">

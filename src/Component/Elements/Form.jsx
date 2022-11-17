@@ -53,6 +53,7 @@ function Form({ title, setEmail, setPassword, handleAction }) {
                   <div className="text-center">
                     If you already have then <br/> 
                     <Link to="/login">Click here</Link>
+                    
                   </div>
                 </div>
               </div>

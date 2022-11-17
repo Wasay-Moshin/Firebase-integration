@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import "./App.scss";
 import Form from "./Component/Elements/Form";
 import Home from "./Component/Elements/Home";
+import Details from "./Component/Elements/Details";
 import db from "./firbase";
 import { doc, setDoc } from "firebase/firestore";
 import {
@@ -71,6 +72,8 @@ sendPasswordResetEmail(auth, email)
   });
 
   }
+ 
+
   return (
     <>
       <ToastContainer />
@@ -106,6 +109,7 @@ sendPasswordResetEmail(auth, email)
             />
           }
         />
+         <Route path="/detail" element={<Details />} />
       </Routes>
     </>
   );

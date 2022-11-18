@@ -12,7 +12,7 @@ body{
 }
 .form {
   .card {
-    margin-top: 80px;
+    margin-top: 30px;
     margin-right: -70px;
     background: hsla(0, 0%, 100%, 0.55);
     backdrop-filter: blur(30px);
@@ -25,7 +25,7 @@ body{
 
   .img1 {
     margin-top: 100px;
-    height: 390px;
+    height: 490px;
     width: 550px;
     border-radius: 10px;
   }
@@ -59,4 +59,23 @@ body{
     border-radius: 300px 100px 100px 100px;
     box-shadow: 10px 10px 50px 10px rgb(0 0 0 / 12%);
   }
+}
+.update{
+  .card {
+    margin-top: 30px;
+    margin-right: -70px;
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+  }
+}
+label progress {
+  width: 35px;
+}
+label img {
+  width: 70px;
+  height: 70px;
+}
+
+#input-file {
+  display: none !important;
 }

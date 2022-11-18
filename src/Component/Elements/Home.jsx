@@ -1,9 +1,6 @@
 import { Button } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import IconButton from "@mui/material/IconButton";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import {Link} from "react-router-dom"
 
 function Home() {
   const navigate = useNavigate();
@@ -22,10 +19,13 @@ function Home() {
     sessionStorage.removeItem("auth");
     navigate("/login");
   };
-  
- 
+  const detail = () => {
+    sessionStorage.removeItem("auth");
+    navigate("/detail");
+  };
+
   return (
-    <div className="homepg">
+    <div>
       <div className="container">
         <div className="text-center mb-5">
           <h1>Home Page</h1>
@@ -34,17 +34,14 @@ function Home() {
           <div className="col-md-6 mt-5">
             <h2 className="mt-5">We Can Work On It Together</h2>
             <div className="mt-4">
-         <Link to="/detail">
-            {/* <Button variant="contained" >Show profile</Button>  */}
-            showDetails
-     </Link>
-            &nbsp;
-              <Button variant="outlined">
+              &nbsp;
+              <Button variant="outlined" onClick={logout}>
                 Log out
               </Button>
-              <IconButton aria-label="delete">
-                <DeleteIcon />
-              </IconButton>
+              &nbsp;
+              <Button variant="outlined" onClick={detail}>
+                detail
+              </Button>
             </div>
           </div>
           <div className="col-md-6">
